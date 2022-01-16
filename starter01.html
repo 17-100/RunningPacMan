@@ -1,6 +1,6 @@
 <html>
 <SCRIPT>
-    var pos = 0;
+    var pos = 100;
     const pacArray = [
         ['PacMan1.png', 'PacMan2.png'],
         ['PacMan3.png', 'PacMan4.png']
@@ -33,7 +33,7 @@
         var leftimgborder = pos;
         var direction = direction;
         if (!direction) {
-            if (rightimgborder >= 1100) {
+            if (rightimgborder >= 1095) {
                 direction = 1;
             }
         }
@@ -47,9 +47,12 @@
 </SCRIPT>
 
 <body>
-    <div id="bg" style="margin:100px 0 0 100px; width:1000px; height:210px; background-color:aqua; border:black" >
+    <h1 style="margin: 50 0 20 100; font-size:45; font-family: 'Franklin Gothic Medium;', 'Arial Narrow', Arial, sans-serif;">RUN PACMAN</h1>
+     <div id="bg" style="margin:25px 0 0 100px; width:1000px; height:210px; background-color:aqua; border:black; border-style:dotted" >
         <img id="PacMan" src="PacMan1.png" width='200' onclick="Run()" style="position:absolute"></img>
     </div>
+    <button onclick="Run()" style="margin:20px 0 0 100px; top:400px;">RUN</button>
+    
     
 </body>
 
